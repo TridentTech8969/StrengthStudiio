@@ -1,4 +1,4 @@
-﻿// FitZone Gym - Custom JavaScript
+﻿// Strength Studio Gym - Custom JavaScript
 
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all functionality
@@ -361,7 +361,7 @@ styleSheet.textContent = customStyles;
 document.head.appendChild(styleSheet);
 
 // Export for use in other scripts
-window.FitZoneGym = {
+window.StrengthStudioGym = {
     Utils: Utils,
     showNotification: showNotification,
     validateField: validateField

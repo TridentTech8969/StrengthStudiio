@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FitZone Gym</title>
+    <title>@ViewData["Title"] - Strength Studio Gym</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -13,7 +13,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="@Url.Action("Index", "Home")">
-                    <i class="fas fa-dumbbell text-warning"></i> FitZone
+                    @* <i class="fas fa-dumbbell text-warning"></i> *@
+                    <img src="~/images/5x5ft (1).ico" />
+                    Strength Studio
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -55,8 +57,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5><i class="fas fa-dumbbell text-warning"></i> FitZone Gym</h5>
-                    <p class="text-muted">Transform your body, transform your life. Join the fitness revolution today!</p>
+                    <h5><i class="fas fa-dumbbell text-warning"></i> Strength Studio Gym</h5>
+                    <p class="text">Transform your body, transform your life. Join the fitness revolution today!</p>
                     <div class="social-links">
                         <a href="#" class="text-warning me-3"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-warning me-3"><i class="fab fa-instagram"></i></a>
@@ -67,24 +69,24 @@
                 <div class="col-md-2">
                     <h6>Quick Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="@Url.Action("Index", "Home")" class="text-muted">Home</a></li>
-                        <li><a href="@Url.Action("Index", "Services")" class="text-muted">Services</a></li>
-                        <li><a href="@Url.Action("Index", "Trainers")" class="text-muted">Trainers</a></li>
-                        <li><a href="@Url.Action("Index", "About")" class="text-muted">About</a></li>
-                        <li><a href="@Url.Action("Index", "Contact")" class="text-muted">About</a></li>
+                        <li><a href="@Url.Action("Index", "Home")" class="">Home</a></li>
+                        <li><a href="@Url.Action("Index", "Services")" class="">Services</a></li>
+                        <li><a href="@Url.Action("Index", "Trainers")" class="">Trainers</a></li>
+                        <li><a href="@Url.Action("Index", "About")" class="">About</a></li>
+                        <li><a href="@Url.Action("Index", "Contact")" class="">About</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6>Contact Info</h6>
-                    <ul class="list-unstyled text-muted">
+                    <ul class="list-unstyled">
                         <li><i class="fas fa-map-marker-alt text-warning"></i> 123 Fitness Street, Bengaluru</li>
                         <li><i class="fas fa-phone text-warning"></i> +91 98765 43210</li>
-                        <li><i class="fas fa-envelope text-warning"></i> info@fitzonegym.com</li>
+                        <li><i class="fas fa-envelope text-warning"></i> info@Strength Studiogym.com</li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6>Opening Hours</h6>
-                    <ul class="list-unstyled text-muted">
+                    <ul class="list-unstyled">
                         <li>Monday - Friday: 5:00 AM - 11:00 PM</li>
                         <li>Saturday: 6:00 AM - 10:00 PM</li>
                         <li>Sunday: 7:00 AM - 9:00 PM</li>
@@ -94,11 +96,11 @@
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-muted mb-0">&copy; 2025 FitZone Gym. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Strength Studio Gym. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="#" class="text-muted me-3">Privacy Policy</a>
-                    <a href="#" class="text-muted">Terms of Service</a>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#" class="">Terms of Service</a>
                 </div>
             </div>
         </div>

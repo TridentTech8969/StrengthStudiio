@@ -1,4 +1,4 @@
-/* Custom CSS for FitZone Gym */
+/* Custom CSS for Strength Studio Gym */
 
 :root {
     --primary-color: #ffc107;
@@ -43,9 +43,15 @@ body {
         color: var(--primary-color) !important;
     }
 
+.s-Icons{
+    color:black;
+}
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23212529" width="1200" height="800"/><circle fill="%23343a40" cx="200" cy="200" r="100"/><circle fill="%23495057" cx="800" cy="400" r="150"/><circle fill="%23343a40" cx="1000" cy="600" r="80"/></svg>');
+    /*background: linear-gradient(135deg, rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23212529" width="1200" height="800"/><circle fill="%23343a40" cx="200" cy="200" r="100"/><circle fill="%23495057" cx="800" cy="400" r="150"/><circle fill="%23343a40" cx="1000" cy="600" r="80"/></svg>');*/
+    /*background-image: url('../images/gym-background.jpg');*/
+    /*background-image: url('../images/pexels-sarazhizmailov-13104546.jpg');*/
+    background-image: url('../images/pexels-tima-miroshnichenko-5327557.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

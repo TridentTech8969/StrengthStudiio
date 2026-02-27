@@ -6,47 +6,49 @@
 <section class="hero-section">
     <div class="hero-overlay">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-3 fw-bold text-white mb-4">
-                        Transform Your <span class="text-warning">Body</span>
-                    </h1>
-                    <p class="lead text-white mb-4">
-                        Join Strength Studio Gym and discover the best version of yourself. State-of-the-art equipment, expert trainers, and a supportive community await you.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="@Url.Action("Index", "Membership")" class="btn btn-warning btn-lg me-3">
-                            <i class="fas fa-rocket"></i> Start Your Journey
-                        </a>
-                        <a href="@Url.Action("Index", "Services")" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-play-circle"></i> Learn More
-                        </a>
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div style="animation: fadeInLeft 1s ease-out;">
+                        <h1 class="display-3 fw-bold text-white mb-4">
+                            Transform Your <span class="text-warning">Body</span>
+                        </h1>
+                        <p class="lead text-white-50 mb-4">
+                            Join Strength Studio Gym and discover the best version of yourself. State-of-the-art equipment, expert trainers, and a supportive community await you.
+                        </p>
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+                            <a href="tel:+917090029156" class="btn btn-warning btn-lg px-4 py-3 fw-bold" style="border-radius: 10px; box-shadow: 0 5px 20px rgba(255, 165, 0, 0.4);">
+                                <i class="fas fa-rocket me-2"></i> Start Your Journey
+                            </a>
+                            <a href="@Url.Action("Index", "Services")" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold" style="border-radius: 10px; border-width: 2px;">
+                                <i class="fas fa-play-circle me-2"></i> Learn More
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-stats">
+                    <div class="hero-stats" style="animation: fadeInRight 1s ease-out;">
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="stat-card">
-                                    <h3 class="text-warning">200+</h3>
+                                    <h3>750+</h3>
                                     <p>Happy Members</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="stat-card">
-                                    <h3 class="text-warning">5+</h3>
+                                    <h3>5+</h3>
                                     <p>Expert Trainers</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="stat-card">
-                                    <h3 class="text-warning">50+</h3>
+                                    <h3>50+</h3>
                                     <p>Equipment</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="stat-card">
-                                    <h3 class="text-warning">12+</h3>
+                                    <h3>7+</h3>
                                     <p>Years Experience</p>
                                 </div>
                             </div>
@@ -59,69 +61,334 @@
 </section>
 
 <!-- Features Section -->
-<section class="py-5 bg-light">
+<section class="py-5" style="background-color: #0f0f0f;">
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col-lg-8 mx-auto">
-                <h2 class="display-5 fw-bold mb-3">Why Choose Strength Studio?</h2>
-                <p class="lead text-muted">We provide everything you need to achieve your fitness goals</p>
+                <h2 class="display-5 fw-bold text-white mb-3">Why Choose Strength Studio?</h2>
+                <p class="lead text-white-50">We provide everything you need to achieve your fitness goals</p>
             </div>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-dumbbell"></i>
+                <div class="feature-card h-100" style="background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%); border: 1px solid #3d3d3d; border-radius: 15px; padding: 40px; text-align: center; transition: all 0.3s ease;">
+                    <div class="feature-icon mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #ff6b00 0%, #ffa500 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-dumbbell text-white" style="font-size: 2rem;"></i>
                     </div>
-                    <h4>Modern Equipment</h4>
-                    <p class="text-muted">State-of-the-art fitness equipment from leading brands to ensure the best workout experience.</p>
+                    <h4 class="text-white fw-bold mb-3">Modern Equipment</h4>
+                    <p class="text-white-50 mb-0">State-of-the-art fitness equipment from leading brands to ensure the best workout experience.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                <div class="feature-card h-100" style="background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%); border: 1px solid #3d3d3d; border-radius: 15px; padding: 40px; text-align: center; transition: all 0.3s ease;">
+                    <div class="feature-icon mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #ff6b00 0%, #ffa500 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-users text-white" style="font-size: 2rem;"></i>
                     </div>
-                    <h4>Expert Trainers</h4>
-                    <p class="text-muted">Certified personal trainers with years of experience to guide you every step of the way.</p>
+                    <h4 class="text-white fw-bold mb-3">Expert Trainers</h4>
+                    <p class="text-white-50 mb-0">Certified personal trainers with years of experience to guide you every step of the way.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
+                <div class="feature-card h-100" style="background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%); border: 1px solid #3d3d3d; border-radius: 15px; padding: 40px; text-align: center; transition: all 0.3s ease;">
+                    <div class="feature-icon mb-4" style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #ff6b00 0%, #ffa500 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-clock text-white" style="font-size: 2rem;"></i>
                     </div>
-                    <h4>Flexible Hours</h4>
-                    <p class="text-muted">Open 6 days a week with extended hours to fit your busy schedule.</p>
+                    <h4 class="text-white fw-bold mb-3">Flexible Hours</h4>
+                    <p class="text-white-50 mb-0">Open 6 days a week with extended hours to fit your busy schedule.</p>
                 </div>
             </div>
-            @* <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Gym Gallery Section -->
+<section class="py-5" style="background-color: #1a1a1a;">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold text-white mb-3">Our Facility</h2>
+                <p class="lead text-white-50">Take a virtual tour of Strength Studio's world-class facility</p>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4 mb-5">
+            <!-- Large Feature Image -->
+            <div class="col-lg-8">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 400px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g1.jpg" alt="Main Training Floor" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 30px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h4 class="text-white fw-bold mb-2">Main Training Floor</h4>
+                            <p class="text-white-50 mb-0">Equipped with premium machines and free weights</p>
+                        </div>
                     </div>
-                    <h4>Group Classes</h4>
-                    <p class="text-muted">Energizing group fitness classes including yoga, pilates, zumba, and high-intensity training.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
+
+            <!-- Smaller Images -->
+            <div class="col-lg-4">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 190px; cursor: pointer; border: 2px solid #3d3d3d;">
+                            <img src="~/images/Gym-Equips/g2.jpg" alt="Cardio Area" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                                <div>
+                                    <h5 class="text-white fw-bold mb-1">Cardio Zone</h5>
+                                    <p class="text-white-50 small mb-0">Latest cardio equipment</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h4>Wellness Center</h4>
-                    <p class="text-muted">Complete wellness facility with sauna, steam room, and recovery services.</p>
+                    <div class="col-12">
+                        <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 190px; cursor: pointer; border: 2px solid #3d3d3d;">
+                            <img src="~/images/Gym-Equips/g3.jpg" alt="Free Weights" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                                <div>
+                                    <h5 class="text-white fw-bold mb-1">Free Weights Area</h5>
+                                    <p class="text-white-50 small mb-0">Complete dumbbell collection</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="feature-card h-100">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+        </div>
+
+        <!-- Second Row of Gallery -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g4.jpg" alt="Training Sessions" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Training Sessions</h5>
+                            <p class="text-white-50 mb-0">Personal and group training available</p>
+                        </div>
                     </div>
-                    <h4>Strength Studio App</h4>
-                    <p class="text-muted">Track your progress, book classes, and stay connected with our mobile app.</p>
                 </div>
-            </div> *@
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g5.jpg" alt="Premium Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Premium Equipment</h5>
+                            <p class="text-white-50 mb-0">Top-quality machines and accessories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g6.jpg" alt="Training Area" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Specialized Training</h5>
+                            <p class="text-white-50 mb-0">Dedicated zones for focused workouts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Row of Gallery -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g7.jpg" alt="Gym Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h6 class="text-white fw-bold mb-1">Strength Zone</h6>
+                            <p class="text-white-50 small mb-0">Power training area</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g8.jpg" alt="Gym Facility" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h6 class="text-white fw-bold mb-1">Functional Area</h6>
+                            <p class="text-white-50 small mb-0">Dynamic training space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g9.jpg" alt="Workout Area" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h6 class="text-white fw-bold mb-1">Multi-Purpose Zone</h6>
+                            <p class="text-white-50 small mb-0">Versatile workout space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g10.jpg" alt="Training Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h6 class="text-white fw-bold mb-1">Core Training</h6>
+                            <p class="text-white-50 small mb-0">Specialized equipment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Row of Gallery -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g11.jpg" alt="Gym Environment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Premium Atmosphere</h5>
+                            <p class="text-white-50 mb-0">Motivating environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g12.jpg" alt="Fitness Space" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Complete Setup</h5>
+                            <p class="text-white-50 mb-0">Everything you need</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
+                    <img src="~/images/Gym-Equips/g13.jpg" alt="Modern Gym" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
+                        <div>
+                            <h5 class="text-white fw-bold mb-2">Modern Facility</h5>
+                            <p class="text-white-50 mb-0">State-of-the-art design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="text-center">
+                    <h3 class="text-white fw-bold mb-3">
+                        <i class="fas fa-video text-warning me-2"></i>
+                        Gym Tour Videos
+                    </h3>
+                    <p class="text-white-50 mb-0">Watch our facility tours and member testimonials</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Video 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.40 PM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Equipment Showcase</h5>
+                        <p class="video-description">Tour our extensive collection of premium fitness equipment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/women1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Strong Women, Stronger Society</h5>
+                        <p class="video-description">Explore our spacious main training area with state-of-the-art equipment.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Video 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.39 PM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Functional Training</h5>
+                        <p class="video-description">Check out our premium cardio equipment and training area.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Video 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.37 PM2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Lower Body Workout Machine</h5>
+                        <p class="video-description">Check out our premium lower body equipments and training area.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Video 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.41 PM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Session With Experts</h5>
+                        <p class="video-description">See our expert trainers in action with personalized workout plans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="~/Videos/gymVideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h5 class="video-title">Strength Training</h5>
+                        <p class="video-description">Don't just build muscles, build the strength at Strength Studio.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -133,10 +400,175 @@
             <div class="col-lg-8">
                 <h2 class="display-5 fw-bold text-white mb-4">Ready to Start Your Fitness Journey?</h2>
                 <p class="lead text-white mb-4">Join hundreds of satisfied members who have transformed their lives at Strength Studio Gym.</p>
-                <a href="@Url.Action("Index", "Membership")" class="btn btn-warning btn-lg">
-                    <i class="fas fa-arrow-right"></i> Get Membership Now
+                <a href="@Url.Action("Index", "Membership")" class="btn btn-dark btn-lg px-5 py-3 fw-bold" style="border-radius: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);">
+                    <i class="fas fa-arrow-right me-2"></i> Get Membership Now
                 </a>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    /* Gallery Hover Effects */
+    .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .gallery-item img {
+        transition: transform 0.5s ease;
+    }
+
+    /* Video Card Styles */
+    .video-card {
+        background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+        border: 1px solid #3d3d3d;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+            border-color: #ff6b00;
+        }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        overflow: hidden;
+        background: #000;
+    }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .video-info {
+        padding: 20px;
+    }
+
+    .video-title {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .video-description {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    /* Button Hover */
+    .btn-dark:hover {
+        background-color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsive adjustments */
+    @@media (max-width: 992px) {
+        .gallery-item
+
+    {
+        height: 250px !important;
+    }
+
+    .video-container {
+        padding-top: 75%; /* Taller aspect ratio for tablets */
+    }
+
+    }
+
+    @@media (max-width: 768px) {
+        .gallery-item
+
+    {
+        height: 220px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+        .hero-buttons .btn {
+            width: 100%;
+        }
+
+    .stat-card h3 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 30px !important;
+    }
+
+    .video-info {
+        padding: 15px;
+    }
+
+    .video-title {
+        font-size: 1rem;
+    }
+
+    .video-description {
+        font-size: 0.85rem;
+    }
+
+    }
+
+    @@media (max-width: 576px) {
+        .gallery-item
+
+    {
+        height: 200px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+
+    .display-5 {
+        font-size: 2rem !important;
+    }
+
+    .stat-card {
+        padding: 20px 10px !important;
+    }
+
+        .stat-card h3 {
+            font-size: 1.75rem;
+        }
+
+        .stat-card p {
+            font-size: 0.85rem;
+        }
+
+    .feature-icon {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+        .feature-icon i {
+            font-size: 1.5rem !important;
+        }
+
+    }
+</style>

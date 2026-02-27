@@ -3,333 +3,160 @@
 }
 
 <!-- Page Header -->
-<section class="page-header">
+<section class="page-header" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 100px 0 80px;">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
-                <h1 class="display-4 fw-bold text-white">Membership Plans</h1>
-                <p class="lead text-white">Choose the perfect plan for your fitness journey</p>
+                <h1 class="display-4 fw-bold text-white mb-3">Membership Plans</h1>
+                <p class="lead text-white-50">Choose the perfect plan for your fitness journey</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Membership Plans -->
-<section class="py-5">
+<!-- Special Opening Offer Banner -->
+<section class="py-4" style="background: linear-gradient(90deg, #ff6b00 0%, #ffa500 100%);">
     <div class="container">
-        <div class="row g-4">
-            <!-- Basic Plan -->
-            <div class="col-lg-4">
-                <div class="membership-card">
-                    <div class="membership-header">
-                        <h3>Basic</h3>
-                        <div class="membership-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">1,199</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="membership-subtitle">Perfect for beginners</p>
-                    </div>
-                    <div class="membership-features">
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Access to gym equipment</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Cardio and strength training</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Locker room access</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Free WiFi</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Basic fitness assessment</span>
-                        </div>
-                        <div class="feature disabled">
-                            <i class="fas fa-times text-muted"></i>
-                            <span>Personal training sessions</span>
-                        </div>
-                        <div class="feature disabled">
-                            <i class="fas fa-times text-muted"></i>
-                            <span>Group classes</span>
-                        </div>
-                        <div class="feature disabled">
-                            <i class="fas fa-times text-muted"></i>
-                            <span>Nutrition counseling</span>
-                        </div>
-                    </div>
-                    <div class="membership-footer">
-                        <a href="@Url.Action("Index", "Contact")" class="btn btn-outline-warning w-100">Choose Basic</a>
-                    </div>
-                </div>
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h3 class="text-white mb-0 fw-bold">🎉 SPECIAL OFFER for all Members!</h3>
             </div>
-
-            <!-- Premium Plan -->
-            <div class="col-lg-4">
-                <div class="membership-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="membership-header">
-                        <h3>Premium</h3>
-                        <div class="membership-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">4,999</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="membership-subtitle">Best value for serious fitness</p>
-                    </div>
-                    <div class="membership-features">
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Everything in Basic</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Unlimited group classes</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>2 personal training sessions/month</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Nutrition consultation</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Wellness center access</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Priority class booking</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Mobile app access</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Guest passes (2/month)</span>
-                        </div>
-                    </div>
-                    <div class="membership-footer">
-                        <a href="@Url.Action("Index", "Contact")" class="btn btn-warning w-100">Choose Premium</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Elite Plan -->
-            <div class="col-lg-4">
-                <div class="membership-card">
-                    <div class="membership-header">
-                        <h3>Elite</h3>
-                        <div class="membership-price">
-                            <span class="currency">₹</span>
-                            <span class="amount">7,999</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="membership-subtitle">Ultimate fitness experience</p>
-                    </div>
-                    <div class="membership-features">
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Everything in Premium</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Unlimited personal training</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Advanced nutrition planning</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Recovery services included</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>24/7 gym access</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Exclusive member events</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Unlimited guest passes</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check text-success"></i>
-                            <span>Premium locker rental</span>
-                        </div>
-                    </div>
-                    <div class="membership-footer">
-                        <a href="@Url.Action("Index", "Contact")" class="btn btn-outline-warning w-100">Choose Elite</a>
-                    </div>
-                </div>
+            <div class="col-md-4 text-md-end">
+                <span class="badge bg-dark text-warning fs-6 px-4 py-2">Limited Time</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Annual Plans -->
-<section class="py-5 bg-light">
+<!-- Opening Offer Plans -->
+<section class="py-5" style="background-color: #0f0f0f;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Annual Plans - Save More!</h2>
-            <p class="lead text-muted">Get up to 20% discount with our annual membership plans</p>
+            <h2 class="display-5 fw-bold text-white mb-3">Opening Special Pricing</h2>
+            <p class="lead text-white-50">Exclusive rates for all members</p>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="annual-plan-card">
-                    <h4>Basic Annual</h4>
-                    <div class="annual-pricing">
-                        <span class="original-price">₹35,988</span>
-                        <span class="discounted-price">₹28,999</span>
-                        <span class="savings">Save ₹6,989</span>
+        <div class="row g-4 justify-content-center">
+            <!-- 1 Year Special -->
+            <div class="col-lg-3 col-md-6">
+                <div class="opening-offer-card" style="background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); border: 2px solid #ffa500; border-radius: 15px; padding: 30px; text-align: center; height: 100%; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: #ff6b00; opacity: 0.1; border-radius: 50%;"></div>
+                    <div class="duration-badge" style="background: #ffa500; color: #000; font-weight: bold; padding: 8px 20px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
+                        1 YEAR
                     </div>
-                    <a href="@Url.Action("Index", "Contact")" class="btn btn-outline-warning">Choose Annual Basic</a>
+                    <div class="price-section mb-4">
+                        <h2 class="text-warning fw-bold mb-0" style="font-size: 3rem;">₹8,000</h2>
+                        <p class="text-white-50 mb-0">One-time payment</p>
+                    </div>
+                    <p class="text-white mb-4">Best value for committed fitness enthusiasts</p>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-warning w-100 fw-bold py-3" style="border-radius: 10px;">
+                        Choose 1 Year
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="annual-plan-card featured">
-                    <h4>Premium Annual</h4>
-                    <div class="annual-pricing">
-                        <span class="original-price">₹59,988</span>
-                        <span class="discounted-price">₹47,999</span>
-                        <span class="savings">Save ₹11,989</span>
+
+            <!-- 6 Months Special -->
+            <div class="col-lg-3 col-md-6">
+                <div class="opening-offer-card" style="background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); border: 2px solid #ffa500; border-radius: 15px; padding: 30px; text-align: center; height: 100%; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: #ff6b00; opacity: 0.1; border-radius: 50%;"></div>
+                    <div class="duration-badge" style="background: #ffa500; color: #000; font-weight: bold; padding: 8px 20px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
+                        6 MONTHS
                     </div>
-                    <a href="@Url.Action("Index", "Contact")" class="btn btn-warning">Choose Annual Premium</a>
+                    <div class="price-section mb-4">
+                        <h2 class="text-warning fw-bold mb-0" style="font-size: 3rem;">₹4,500</h2>
+                        <p class="text-white-50 mb-0">One-time payment</p>
+                    </div>
+                    <p class="text-white mb-4">Perfect for building lasting habits</p>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-warning w-100 fw-bold py-3" style="border-radius: 10px;">
+                        Choose 6 Months
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="annual-plan-card">
-                    <h4>Elite Annual</h4>
-                    <div class="annual-pricing">
-                        <span class="original-price">₹95,988</span>
-                        <span class="discounted-price">₹79,999</span>
-                        <span class="savings">Save ₹15,989</span>
+
+            <!-- 3 Months Special -->
+            <div class="col-lg-3 col-md-6">
+                <div class="opening-offer-card" style="background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); border: 2px solid #ffa500; border-radius: 15px; padding: 30px; text-align: center; height: 100%; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: #ff6b00; opacity: 0.1; border-radius: 50%;"></div>
+                    <div class="duration-badge" style="background: #ffa500; color: #000; font-weight: bold; padding: 8px 20px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
+                        3 MONTHS
                     </div>
-                    <a href="@Url.Action("Index", "Contact")" class="btn btn-outline-warning">Choose Annual Elite</a>
+                    <div class="price-section mb-4">
+                        <h2 class="text-warning fw-bold mb-0" style="font-size: 3rem;">₹2,500</h2>
+                        <p class="text-success fw-bold mb-0">+ ₹500 Admission</p>
+                    </div>
+                    <p class="text-white mb-4">Great for testing the waters</p>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-warning w-100 fw-bold py-3" style="border-radius: 10px;">
+                        Choose 3 Months
+                    </a>
+                </div>
+            </div>
+
+            <!-- 1 Month Special -->
+            <div class="col-lg-3 col-md-6">
+                <div class="opening-offer-card" style="background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); border: 2px solid #ffa500; border-radius: 15px; padding: 30px; text-align: center; height: 100%; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: #ff6b00; opacity: 0.1; border-radius: 50%;"></div>
+                    <div class="duration-badge" style="background: #ffa500; color: #000; font-weight: bold; padding: 8px 20px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
+                        1 MONTH
+                    </div>
+                    <div class="price-section mb-4">
+                        <h2 class="text-warning fw-bold mb-0" style="font-size: 3rem;">₹1,000</h2>
+                        <p class="text-success fw-bold mb-0">+ ₹1,000 Admission</p>
+                    </div>
+                    <p class="text-white mb-4">Flexible monthly option</p>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-warning w-100 fw-bold py-3" style="border-radius: 10px;">
+                        Choose 1 Month
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Additional Benefits -->
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Member Benefits</h2>
-            <p class="lead text-muted">Exclusive perks for Strength Studio members</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h5>Strength Studio Mobile App</h5>
-                    <p class="text-muted">Track workouts, book classes, and monitor progress on the go.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                    <h5>Flexible Scheduling</h5>
-                    <p class="text-muted">Book and reschedule classes easily with our online system.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h5>Member Rewards</h5>
-                    <p class="text-muted">Earn points for workouts and redeem for exclusive rewards.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h5>Community Events</h5>
-                    <p class="text-muted">Join fitness challenges, workshops, and social events.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- FAQ Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="accordion" id="membershipFAQ">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                Can I freeze my membership?
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#membershipFAQ">
-                            <div class="accordion-body">
-                                Yes, you can freeze your membership for up to 3 months per year for medical reasons or extended travel. A small administrative fee applies.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                Is there a cancellation policy?
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
-                            <div class="accordion-body">
-                                Monthly memberships require 30 days written notice. Annual memberships have a 7-day cooling-off period from signup date.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                Can I bring guests?
-                            </button>
-                        </h2>
-                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
-                            <div class="accordion-body">
-                                Premium and Elite members get guest passes monthly. Basic members can purchase day passes for guests at a discounted rate.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                Are there any joining fees?
-                            </button>
-                        </h2>
-                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#membershipFAQ">
-                            <div class="accordion-body">
-                                There's a one-time joining fee of ₹1,500 for all new members, which includes your membership card, initial assessment, and welcome kit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+<style>
+    /* Hover Effects */
+    .membership-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(255, 165, 0, 0.2);
+    }
+
+    .opening-offer-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(255, 165, 0, 0.3);
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        border-color: #ffa500 !important;
+        box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+    }
+
+    .annual-plan-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(255, 165, 0, 0.2);
+    }
+
+    /* Button Hover Effects */
+    .btn-outline-warning:hover {
+        background-color: #ffa500;
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+    }
+
+    .btn-warning:hover {
+        background-color: #ff6b00;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
+    }
+
+    /* Accordion Hover */
+    .accordion-button:not(.collapsed) {
+        background-color: #ffa500 !important;
+        color: #000 !important;
+    }
+
+    .accordion-button:hover {
+        background-color: #3d3d3d !important;
+    }
+</style>

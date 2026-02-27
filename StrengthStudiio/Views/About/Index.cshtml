@@ -8,33 +8,53 @@
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h1 class="display-4 fw-bold text-white">About Strength Studio</h1>
-                <p class="lead text-white">Your premier fitness destination in Bengaluru</p>
+                <p class="lead text-white-50">Your premier fitness destination in Belgaum</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="py-5">
+<section class="py-5" style="background-color: #0f0f0f;">
     <div class="container">
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-6">
-                <h2 class="display-5 fw-bold mb-4">Our Story</h2>
-                <p class="lead text-muted mb-4">
-                    Founded in 2020, Strength Studio Gym has been at the forefront of the fitness revolution in Belgaum. What started as a small community gym has grown into a comprehensive fitness center serving over 200+ members.
-                </p>
-                <p class="mb-4">
-                    Our mission is simple: to create a welcoming, supportive environment where people of all fitness levels can achieve their health and wellness goals. We believe that fitness is not just about physical transformation, but about building confidence, community, and a healthier lifestyle.
-                </p>
-                <p class="mb-4">
-                    With state-of-the-art equipment, expert trainers, and a variety of programs, we're committed to helping you become the best version of yourself.
-                </p>
+        <div class="row align-items-center mb-5 g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div style="animation: fadeInLeft 1s ease-out;">
+                    <h2 class="display-5 fw-bold text-white mb-4">Our Story</h2>
+                    <p class="lead text-white-50 mb-4">
+                        Founded in 2024, Strength Studio Gym has been at the forefront of the fitness revolution in Belgaum. What started as a small community gym has grown into a comprehensive fitness center serving over 750+ members.
+                    </p>
+                    <p class="text-white-50 mb-4">
+                        Our mission is simple: to create a welcoming, supportive environment where people of all fitness levels can achieve their health and wellness goals. We believe that fitness is not just about physical transformation, but about building confidence, community, and a healthier lifestyle.
+                    </p>
+                    <p class="text-white-50 mb-4">
+                        With state-of-the-art equipment, expert trainers, and a variety of programs, we're committed to helping you become the best version of yourself.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <div class="stat-badge" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); padding: 1rem 1.5rem; border-radius: 10px; border: 1px solid #3d3d3d;">
+                            <div class="text-warning fw-bold" style="font-size: 1.5rem;">2024</div>
+                            <div class="text-white-50 small">Est. Year</div>
+                        </div>
+                        <div class="stat-badge" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); padding: 1rem 1.5rem; border-radius: 10px; border: 1px solid #3d3d3d;">
+                            <div class="text-warning fw-bold" style="font-size: 1.5rem;">750+</div>
+                            <div class="text-white-50 small">Members</div>
+                        </div>
+                        <div class="stat-badge" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); padding: 1rem 1.5rem; border-radius: 10px; border: 1px solid #3d3d3d;">
+                            <div class="text-warning fw-bold" style="font-size: 1.5rem;">5+</div>
+                            <div class="text-white-50 small">Trainers</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <div class="about-image">
-                    <div class="placeholder-image-large">
-                        <i class="fas fa-dumbbell fa-5x text-warning"></i>
-                        <p class="text-muted mt-3">Modern Gym Facility</p>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="about-image" style="animation: fadeInRight 1s ease-out;">
+                    <div class="placeholder-image-large" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); border: 2px solid #3d3d3d; position: relative; overflow: hidden;">
+                        <!-- Replace this img src with your actual gym photo -->
+                        <img src="/images/gym-facility.jpg" alt="Strength Studio Facility" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-content').style.display='none';" onerror="this.style.display='none';">
+                        <div class="placeholder-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                            <i class="fas fa-dumbbell fa-5x text-warning mb-3"></i>
+                            <p class="text-white-50 mt-3">Modern Gym Facility</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,38 +63,42 @@
 </section>
 
 <!-- Mission Vision Values -->
-<section class="py-5 bg-light">
+<section class="py-5" style="background-color: #1a1a1a;">
     <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3">Our Foundation</h2>
+            <p class="lead text-white-50">The principles that guide us every day</p>
+        </div>
         <div class="row g-4">
             <div class="col-lg-4">
-                <div class="mvv-card text-center">
+                <div class="mvv-card text-center" style="transition: all 0.3s ease;">
                     <div class="mvv-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Our Mission</h3>
-                    <p class="text-muted">
+                    <h3 class="text-white fw-bold mb-3">Our Mission</h3>
+                    <p class="text-white-50">
                         To empower individuals to achieve their fitness goals through expert guidance, modern facilities, and a supportive community that encourages personal growth and wellness.
                     </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="mvv-card text-center">
+                <div class="mvv-card text-center" style="transition: all 0.3s ease;">
                     <div class="mvv-icon">
                         <i class="fas fa-eye"></i>
                     </div>
-                    <h3>Our Vision</h3>
-                    <p class="text-muted">
-                        To be the leading fitness center in Bengaluru, known for transforming lives and building a healthier, stronger community through innovative fitness solutions.
+                    <h3 class="text-white fw-bold mb-3">Our Vision</h3>
+                    <p class="text-white-50">
+                        To be the leading fitness center in Belgaum, known for transforming lives and building a healthier, stronger community through innovative fitness solutions.
                     </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="mvv-card text-center">
+                <div class="mvv-card text-center" style="transition: all 0.3s ease;">
                     <div class="mvv-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Our Values</h3>
-                    <p class="text-muted">
+                    <h3 class="text-white fw-bold mb-3">Our Values</h3>
+                    <p class="text-white-50">
                         Excellence in service, integrity in our approach, inclusivity for all fitness levels, and commitment to helping every member achieve lasting results.
                     </p>
                 </div>
@@ -84,34 +108,34 @@
 </section>
 
 <!-- Achievements Section -->
-<section class="py-5">
+<section class="py-5" style="background-color: #0f0f0f;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Our Achievements</h2>
-            <p class="lead text-muted">Numbers that speak for our commitment to excellence</p>
+            <h2 class="display-5 fw-bold text-white mb-3">Our Achievements</h2>
+            <p class="lead text-white-50">Numbers that speak for our commitment to excellence</p>
         </div>
         <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="achievement-card">
-                    <div class="achievement-number">00+</div>
+                    <div class="achievement-number">750+</div>
                     <div class="achievement-label">Happy Members</div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="achievement-card">
-                    <div class="achievement-number">15+</div>
+                    <div class="achievement-number">5+</div>
                     <div class="achievement-label">Expert Trainers</div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="achievement-card">
-                    <div class="achievement-number">5+</div>
+                    <div class="achievement-number">15+</div>
                     <div class="achievement-label">Years Experience</div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="achievement-card">
-                    <div class="achievement-number">98%</div>
+                    <div class="achievement-number">100%</div>
                     <div class="achievement-label">Satisfaction Rate</div>
                 </div>
             </div>
@@ -119,130 +143,127 @@
     </div>
 </section>
 
-<!-- Facilities Section -->
-<section class="py-5 bg-light">
+<!-- Team Leadership -->
+<section class="py-5" style="background-color: #1a1a1a;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">World-Class Facilities</h2>
-            <p class="lead text-muted">Everything you need for a complete fitness experience</p>
+            <h2 class="display-5 fw-bold text-white mb-3">Meet Our Leadership</h2>
+            <p class="lead text-white-50">The visionaries behind Strength Studio Gym</p>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-dumbbell"></i>
+        <div class="row justify-content-center g-4">
+            <div class="col-lg-5 col-md-6">
+                <div class="leader-card">
+                    <div class="leader-image" style="position: relative; overflow: hidden;">
+                        <!-- Replace with actual owner photo -->
+                        <img src="/images/owner-amit-sharma.jpg" alt="Amit Sharma - Founder & CEO" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+                        <div class="placeholder-image" style="height: 300px; display: flex;">
+                            <i class="fas fa-user-tie fa-5x text-white-50"></i>
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div class="leader-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 15, 15, 0.95) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 30px;">
+                            <div>
+                                <div class="d-flex gap-3 mb-3">
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h5>Weight Training Area</h5>
-                    <p class="text-muted">Complete range of free weights and resistance machines</p>
+                    <div class="leader-info">
+                        <h4 class="text-white fw-bold mb-2">Sambhaji Pawale</h4>
+                        <p class="leader-title">Founder & CEO</p>
+                        <p class="text-white-50 mb-3">
+                            Former fitness competitor with 15+ years in the industry. Passionate about making fitness accessible to everyone.
+                        </p>
+                        <div class="leader-credentials mb-3">
+                            <span class="badge bg-warning text-dark me-2">Certified Trainer</span>
+                            <span class="badge bg-warning text-dark me-2">15+ Years</span>
+                            <span class="badge bg-warning text-dark">Fitness Expert</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-running"></i>
+            <div class="col-lg-5 col-md-6">
+                <div class="leader-card">
+                    <div class="leader-image" style="position: relative; overflow: hidden;">
+                        <!-- Replace with actual owner photo -->
+                        <img src="/images/owner-kavitha-nair.jpg" alt="Kavitha Nair - Head of Operations" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+                        <div class="placeholder-image" style="height: 300px; display: flex;">
+                            <i class="fas fa-user-tie fa-5x text-white-50"></i>
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div class="leader-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 15, 15, 0.95) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 30px;">
+                            <div>
+                                <div class="d-flex gap-3 mb-3">
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h5>Cardio Zone</h5>
-                    <p class="text-muted">Modern treadmills, ellipticals, and bikes with entertainment systems</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-users"></i>
+                    <div class="leader-info">
+                        <h4 class="text-white fw-bold mb-2">Maya Pawale</h4>
+                        <p class="leader-title">Head of Operations</p>
+                        <p class="text-white-50 mb-3">
+                            Oversees finance, accounts, and daily operations to ensure smooth workflows and an exceptional member experience.
+                        </p>
+                        <div class="leader-credentials mb-3">
+                            <span class="badge bg-warning text-dark me-2">Finance & Accounts</span>
+                            <span class="badge bg-warning text-dark me-2">Operations Expert</span>
+                            <span class="badge bg-warning text-dark">Business Management</span>
+                        </div>
                     </div>
-                    <h5>Group Class Studio</h5>
-                    <p class="text-muted">Spacious studio for yoga, pilates, zumba, and HIIT classes</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h5>Wellness Center</h5>
-                    <p class="text-muted">Sauna, steam room, and recovery facilities</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-shower"></i>
-                    </div>
-                    <h5>Locker Rooms</h5>
-                    <p class="text-muted">Clean, spacious changing rooms with modern amenities</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h5>Parking</h5>
-                    <p class="text-muted">Ample parking space for members</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h5>Free WiFi</h5>
-                    <p class="text-muted">High-speed internet throughout the facility</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="facility-card">
-                    <div class="facility-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <h5>Juice Bar</h5>
-                    <p class="text-muted">Fresh smoothies and healthy snacks</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Team Leadership -->
-<section class="py-5">
+
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Meet Our Leadership</h2>
-            <p class="lead text-muted">The visionaries behind Strength Studio Gym</p>
-        </div>
-        <div class="row justify-content-center g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="leader-card">
-                    <div class="leader-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-user fa-4x text-muted"></i>
-                        </div>
-                    </div>
-                    <div class="leader-info">
-                        <h4>Amit Sharma</h4>
-                        <p class="leader-title text-warning">Founder & CEO</p>
-                        <p class="text-muted">
-                            Former fitness competitor with 15+ years in the industry. Passionate about making fitness accessible to everyone.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="leader-card">
-                    <div class="leader-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-user fa-4x text-muted"></i>
-                        </div>
-                    </div>
-                    <div class="leader-info">
-                        <h4>Kavitha Nair</h4>
-                        <p class="leader-title text-warning">Head of Operations</p>
-                        <p class="text-muted">
-                            MBA with specialization in health management. Ensures smooth operations and exceptional member experience.
-                        </p>
-                    </div>
-                </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold text-white mb-4">Ready to Join Our Community?</h2>
+                <p class="lead text-white mb-4">Experience the Strength Studio difference. Start your transformation today!</p>
+                <a href="@Url.Action("Index", "Membership")" class="btn btn-dark btn-lg px-5 py-3 fw-bold" style="border-radius: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);">
+                    <i class="fas fa-rocket me-2"></i> Become a Member
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    /* Leader Card Hover Effects */
+    .leader-card:hover .leader-overlay {
+        opacity: 1;
+    }
+
+    .leader-card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* MVV Card Hover */
+    .mvv-card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Responsive images */
+    @@media (max-width: 767.98px) {
+        .leader-image
+
+    {
+        height: 250px !important;
+    }
+
+    .placeholder-image-large {
+        height: 300px !important;
+    }
+
+    }
+</style>

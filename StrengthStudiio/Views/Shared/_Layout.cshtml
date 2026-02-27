@@ -3,45 +3,79 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Strength Studio Gym - Transform your body, transform your life. State-of-the-art fitness facility in Belagavi." />
+    <meta name="keywords" content="gym, fitness, strength training, personal training, Belagavi" />
     <title>@ViewData["Title"] - Strength Studio Gym</title>
+
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/images/5x5ft (1).ico" />
 </head>
 <body>
+    <!-- Mobile-first Navigation -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="@Url.Action("Index", "Home")">
-                    @* <i class="fas fa-dumbbell text-warning"></i> *@
-                    <img src="~/images/5x5ft (1).ico" />
-                    Strength Studio
+                <!-- Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home")">
+                    <img src="~/images/5x5ft (1).ico" alt="Strength Studio Logo" style="height: 40px; width: auto; margin-right: 10px;" />
+                    <span class="d-none d-sm-inline fw-bold">Strength Studio</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "Home")">
+                                <i class="fas fa-home d-lg-none me-2"></i>Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Services")">Services</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "Services")">
+                                <i class="fas fa-dumbbell d-lg-none me-2"></i>Services
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Trainers")">Trainers</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "Trainers")">
+                                <i class="fas fa-user-friends d-lg-none me-2"></i>Trainers
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "About")">About</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "About")">
+                                <i class="fas fa-info-circle d-lg-none me-2"></i>About
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Membership")">Membership</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "Membership")">
+                                <i class="fas fa-id-card d-lg-none me-2"></i>Membership
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Contact")">Contact</a>
+                            <a class="nav-link px-3 py-2" href="@Url.Action("Index", "Contact")">
+                                <i class="fas fa-envelope d-lg-none me-2"></i>Contact
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-warning text-dark ms-2 px-3" href="@Url.Action("Index", "Membership")">Join Now</a>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="btn btn-warning text-dark fw-bold px-4 py-2 w-100" href="@Url.Action("Index", "Membership")" style="border-radius: 8px;">
+                                <i class="fas fa-rocket me-2"></i>Join Now
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -49,64 +83,197 @@
         </nav>
     </header>
 
-    <main role="main">
+    <!-- Main Content -->
+    <main role="main" class="main-content">
         @RenderBody()
     </main>
 
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5><i class="fas fa-dumbbell text-warning"></i> Strength Studio Gym</h5>
-                    <p class="text">Transform your body, transform your life. Join the fitness revolution today!</p>
-                    <div class="social-links">
-                        <a href="#" class="text-warning me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-warning me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-warning me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-warning"><i class="fab fa-youtube"></i></a>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-4 py-md-5">
+
+            <!-- Brand + Description + Social -->
+            <div class="mb-4 pb-3" style="border-bottom: 1px solid var(--border-gray);">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="~/images/5x5ft (1).ico" alt="Strength Studio Logo" style="height: 36px; width: auto; margin-right: 10px;" />
+                    <h5 class="mb-0 text-white fw-bold">Strength Studio</h5>
+                </div>
+                <p class="text-white-50 mb-3" style="font-size:0.9rem;">
+                    Transform your body, transform your life. Join the fitness revolution today and become part of our growing community!
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="#" class="social-icon" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/strengthstudiobelgaum/" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links — full width on mobile, columns on desktop -->
+            <div class="mb-4 pb-3" style="border-bottom: 1px solid var(--border-gray);">
+                <h6 class="text-warning fw-bold mb-3">Quick Links</h6>
+                <div class="row g-0">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="list-unstyled footer-links mb-0">
+                            <li class="mb-2"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li class="mb-2"><a href="@Url.Action("Index", "Services")">Services</a></li>
+                            <li class="mb-2"><a href="@Url.Action("Index", "Trainers")">Trainers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="list-unstyled footer-links mb-0">
+                            <li class="mb-2"><a href="@Url.Action("Index", "About")">About</a></li>
+                            <li class="mb-2"><a href="@Url.Action("Index", "Membership")">Membership</a></li>
+                            <li class="mb-2"><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <h6>Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="@Url.Action("Index", "Home")" class="">Home</a></li>
-                        <li><a href="@Url.Action("Index", "Services")" class="">Services</a></li>
-                        <li><a href="@Url.Action("Index", "Trainers")" class="">Trainers</a></li>
-                        <li><a href="@Url.Action("Index", "About")" class="">About</a></li>
-                        <li><a href="@Url.Action("Index", "Contact")" class="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Contact Info</h6>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt text-warning"></i> 123 Fitness Street, Bengaluru</li>
-                        <li><i class="fas fa-phone text-warning"></i> +91 98765 43210</li>
-                        <li><i class="fas fa-envelope text-warning"></i> info@Strength Studiogym.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Opening Hours</h6>
-                    <ul class="list-unstyled">
-                        <li>Monday - Friday: 5:00 AM - 11:00 PM</li>
-                        <li>Saturday: 6:00 AM - 10:00 PM</li>
-                        <li>Sunday: 7:00 AM - 9:00 PM</li>
-                    </ul>
+            </div>
+
+            <!-- Contact Info — full width on mobile -->
+            <div class="mb-4 pb-3" style="border-bottom: 1px solid var(--border-gray);">
+                <h6 class="text-warning fw-bold mb-3">Contact Info</h6>
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex align-items-start p-3 rounded" style="background:var(--medium-gray); border:1px solid var(--border-gray);">
+                        <i class="fas fa-map-marker-alt text-warning me-3 mt-1 flex-shrink-0"></i>
+                        <span class="text-white-50" style="font-size:0.875rem;">1789/1, Kelkar Bagh Rd, Belagavi, Karnataka 590001</span>
+                    </div>
+                    <div class="d-flex align-items-center p-3 rounded" style="background:var(--medium-gray); border:1px solid var(--border-gray);">
+                        <i class="fas fa-phone text-warning me-3 flex-shrink-0"></i>
+                        <a href="tel:+917090029156" class="text-white-50" style="font-size:0.875rem; text-decoration:none;">+91 7090029156</a>
+                    </div>
+                    <div class="d-flex align-items-center p-3 rounded" style="background:var(--medium-gray); border:1px solid var(--border-gray);">
+                        <i class="fas fa-envelope text-warning me-3 flex-shrink-0"></i>
+                        <a href="mailto:info@strengthstudio.com" class="text-white-50" style="font-size:0.875rem; text-decoration:none;">info@strengthstudio.com</a>
+                    </div>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 Strength Studio Gym. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#" class="">Terms of Service</a>
+
+            <!-- Opening Hours — full width on mobile -->
+            <div class="mb-4 pb-3" style="border-bottom: 1px solid var(--border-gray);">
+                <h6 class="text-warning fw-bold mb-3">Opening Hours</h6>
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex align-items-start p-3 rounded" style="background:var(--medium-gray); border:1px solid var(--border-gray);">
+                        <i class="far fa-clock text-warning me-3 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <div class="text-white fw-bold" style="font-size:0.875rem;">Monday - Saturday</div>
+                            <div class="text-white-50" style="font-size:0.8rem;">Morning: 5:30 AM - 12:00 PM</div>
+                            <div class="text-white-50" style="font-size:0.8rem;">Evening: 4:00 PM - 9:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start p-3 rounded" style="background:var(--medium-gray); border:1px solid var(--border-gray);">
+                        <i class="far fa-clock text-warning me-3 mt-1 flex-shrink-0"></i>
+                        <div>
+                            <div class="text-white fw-bold" style="font-size:0.875rem;">Sunday</div>
+                            <div class="text-danger fw-bold" style="font-size:0.8rem;">Rest Day</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Our Location — full width map -->
+            <div class="mb-4">
+                <h6 class="text-warning fw-bold mb-3">Our Location</h6>
+                <div style="border-radius: 10px; overflow: hidden; border: 1px solid var(--border-gray); box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.9396626157177!2d74.50632297459596!3d15.859768245012418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf675ca1578ecd%3A0x86f3bc634a311c58!2sStrength%20Studio!5e0!3m2!1sen!2sin!4v1754308947587!5m2!1sen!2sin"
+                            width="100%"
+                            height="220"
+                            style="border:0; display:block;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-3" style="border-top: 1px solid var(--border-gray);">
+                <div class="row align-items-center g-2">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <p class="mb-0 text-white-50 small">
+                            &copy; 2025 <span class="text-warning fw-bold">Strength Studio Gym</span>. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <a href="#" class="footer-link me-3 small">Privacy Policy</a>
+                        <span class="text-white-50">|</span>
+                        <a href="#" class="footer-link ms-3 small">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="~/js/site.js" asp-append-version="true"></script>
-</body>
+
+    <!-- Scroll to Top Script -->
+    <script>
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Close mobile menu when clicking a link
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 992) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        const currentLocation = window.location.pathname;
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+  </body>
 </html>

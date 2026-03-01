@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Disallow admin, backend, and unnecessary crawling paths
+Disallow: /admin/
+Disallow: /Account/
+Disallow: /Identity/
+Disallow: /Error/
+Disallow: /api/
+Disallow: /bundles/
+Disallow: /lib/
+
+# Allow important crawlers explicitly
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://strengthstudio.in/sitemap.xml

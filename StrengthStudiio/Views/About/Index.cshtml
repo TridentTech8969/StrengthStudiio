@@ -1,5 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "About Us";
+    ViewData["Title"] = "About Strength Studio | Best Gym in Belagavi Since 2024";
+    ViewData["MetaDescription"] = "Learn about Strength Studio — Belagavi's trusted gym with 750+ happy members, 5+ expert trainers & world-class facility. Founded by Sambhaji Pawale at 1789/1 Kelkar Bagh Rd, Belagavi 590001.";
+    ViewData["MetaKeywords"] = "about Strength Studio gym Belagavi, best gym Belagavi history, Belagavi fitness center, Kelkar Bagh gym Belagavi, top gym Karnataka Belgaum, Sambhaji Pawale gym founder Belagavi, gym story Belagavi, fitness center established Belgaum";
+    ViewData["CanonicalUrl"] = "https://strengthstudio.in/About";
+    ViewData["OgTitle"] = "About Strength Studio | Best Gym in Belagavi | 750+ Members";
+    ViewData["OgDescription"] = "750+ members, 5+ certified trainers & world-class facility at Strength Studio Belagavi. Founded by Sambhaji Pawale at Kelkar Bagh Rd. Discover our story.";
+    ViewData["OgImage"] = "https://strengthstudio.in/images/Gym-Equips/g1.jpg";
+    ViewData["OgImageAlt"] = "Strength Studio gym facility Belagavi founded by Sambhaji Pawale";
+}
+
+@section Head {
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@@type": "ListItem", "position": 1, "name": "Home", "item": "https://strengthstudio.in/" },
+            { "@@type": "ListItem", "position": 2, "name": "About", "item": "https://strengthstudio.in/About" }
+          ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "AboutPage",
+          "name": "About Strength Studio Gym Belagavi",
+          "url": "https://strengthstudio.in/About",
+          "description": "Strength Studio is Belagavi's premier gym with 750+ members, 5+ certified trainers and world-class equipment. Founded by Sambhaji Pawale at Kelkar Bagh Road, Belagavi.",
+          "mainEntity": { "@@id": "https://strengthstudio.in/#gym" }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Person",
+          "name": "Sambhaji Pawale",
+          "jobTitle": "Founder & CEO",
+          "description": "Former fitness competitor with 15+ years in the fitness industry. Founder of Strength Studio Gym, Belagavi's premier fitness center.",
+          "worksFor": { "@@id": "https://strengthstudio.in/#gym" },
+          "knowsAbout": ["Fitness Training", "Gym Management", "Strength Training", "Belagavi Fitness"]
+        }
+    </script>
 }
 
 <!-- Page Header -->
@@ -50,7 +93,7 @@
                 <div class="about-image" style="animation: fadeInRight 1s ease-out;">
                     <div class="placeholder-image-large" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); border: 2px solid #3d3d3d; position: relative; overflow: hidden;">
                         <!-- Replace this img src with your actual gym photo -->
-                        <img src="/images/gym-facility.jpg" alt="Strength Studio Facility" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-content').style.display='none';" onerror="this.style.display='none';">
+                        <img src="/images/gym-facility.jpg" alt="Strength Studio gym facility at Kelkar Bagh Road Belagavi Karnataka" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.parentElement.querySelector('.placeholder-content').style.display='none';" onerror="this.style.display='none';" loading="lazy">
                         <div class="placeholder-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
                             <i class="fas fa-dumbbell fa-5x text-warning mb-3"></i>
                             <p class="text-white-50 mt-3">Modern Gym Facility</p>
@@ -155,7 +198,7 @@
                 <div class="leader-card">
                     <div class="leader-image" style="position: relative; overflow: hidden;">
                         <!-- Replace with actual owner photo -->
-                        <img src="/images/owner-amit-sharma.jpg" alt="Amit Sharma - Founder & CEO" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+                        <img src="/images/owner-amit-sharma.jpg" alt="Sambhaji Pawale - Founder and CEO of Strength Studio Gym Belagavi" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" loading="lazy">
                         <div class="placeholder-image" style="height: 300px; display: flex;">
                             <i class="fas fa-user-tie fa-5x text-white-50"></i>
                         </div>
@@ -163,9 +206,9 @@
                         <div class="leader-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 15, 15, 0.95) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 30px;">
                             <div>
                                 <div class="d-flex gap-3 mb-3">
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Sambhaji Pawale on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Sambhaji Pawale on Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Sambhaji Pawale on Facebook"><i class="fab fa-facebook"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +231,7 @@
                 <div class="leader-card">
                     <div class="leader-image" style="position: relative; overflow: hidden;">
                         <!-- Replace with actual owner photo -->
-                        <img src="/images/owner-kavitha-nair.jpg" alt="Kavitha Nair - Head of Operations" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+                        <img src="/images/owner-kavitha-nair.jpg" alt="Maya Pawale - Head of Operations at Strength Studio Gym Belagavi" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" loading="lazy">
                         <div class="placeholder-image" style="height: 300px; display: flex;">
                             <i class="fas fa-user-tie fa-5x text-white-50"></i>
                         </div>
@@ -196,9 +239,9 @@
                         <div class="leader-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 15, 15, 0.95) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 30px;">
                             <div>
                                 <div class="d-flex gap-3 mb-3">
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="text-warning" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Maya Pawale on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Maya Pawale on Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-warning" style="font-size: 1.5rem;" aria-label="Maya Pawale on Facebook"><i class="fab fa-facebook"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -255,15 +298,12 @@
 
     /* Responsive images */
     @@media (max-width: 767.98px) {
-        .leader-image
+        .leader-image {
+            height: 250px !important;
+        }
 
-    {
-        height: 250px !important;
-    }
-
-    .placeholder-image-large {
-        height: 300px !important;
-    }
-
+        .placeholder-image-large {
+            height: 300px !important;
+        }
     }
 </style>

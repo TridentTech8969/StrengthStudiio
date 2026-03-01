@@ -1,5 +1,89 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Best Gym in Belagavi | Expert Trainers & Modern Equipment";
+    ViewData["MetaDescription"] = "Strength Studio is the best gym in Belagavi (Belgaum) with 750+ members, 5+ certified trainers & 50+ machines. Located at Kelkar Bagh Rd. Open Mon–Sat 5:30 AM–9 PM. Join today!";
+    ViewData["MetaKeywords"] = "gym in Belagavi, best gym Belagavi, gym in Belgaum, best gym Belgaum, fitness center Belagavi, strength training Belagavi, personal trainer Belagavi, body building gym Belagavi, gym near me Belagavi, Strength Studio gym, gym membership Belagavi, weight loss gym Belgaum, women gym Belagavi, gym open 5:30 AM Belagavi";
+    ViewData["CanonicalUrl"] = "https://strengthstudio.in/";
+    ViewData["OgTitle"] = "Best Gym in Belagavi | Strength Studio — Expert Trainers & Modern Equipment";
+    ViewData["OgDescription"] = "Join Belagavi's top gym — 750+ members, 5+ expert trainers, 50+ machines. Strength Studio at Kelkar Bagh Rd. Start your fitness journey today!";
+    ViewData["OgImage"] = "https://strengthstudio.in/images/Gym-Equips/g1.jpg";
+    ViewData["OgImageAlt"] = "Main training floor at Strength Studio gym Belagavi with premium weight machines and free weights";
+}
+
+@section Head {
+    <!-- Home Page Schema: WebSite -->
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "WebSite",
+          "@@id": "https://strengthstudio.in/#website",
+          "url": "https://strengthstudio.in/",
+          "name": "Strength Studio Gym",
+          "description": "Best gym in Belagavi, Karnataka with expert trainers and modern equipment",
+          "publisher": { "@@id": "https://strengthstudio.in/#gym" },
+          "inLanguage": "en-IN"
+        }
+    </script>
+
+    <!-- Home Page Schema: FAQPage (shows rich results in Google) -->
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@@type": "Question",
+              "name": "What are the gym timings at Strength Studio Belagavi?",
+              "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Strength Studio is open Monday to Saturday. Morning: 5:30 AM – 12:00 PM. Evening: 4:00 PM – 9:00 PM. Closed on Sundays."
+              }
+            },
+            {
+              "@@type": "Question",
+              "name": "Where is Strength Studio Gym located in Belagavi?",
+              "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Strength Studio Gym is located at 1789/1, Kelkar Bagh Road, Belagavi, Karnataka 590001."
+              }
+            },
+            {
+              "@@type": "Question",
+              "name": "Does Strength Studio offer personal training in Belagavi?",
+              "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Yes, Strength Studio has 5+ certified personal trainers who provide customized workout plans for weight loss, muscle gain and overall fitness."
+              }
+            },
+            {
+              "@@type": "Question",
+              "name": "How many members does Strength Studio Gym have?",
+              "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Strength Studio has 750+ happy members and has been serving the Belagavi fitness community for over 7 years."
+              }
+            },
+            {
+              "@@type": "Question",
+              "name": "Is Strength Studio gym good for women in Belagavi?",
+              "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Yes, Strength Studio is fully equipped for all members including women. We have dedicated cardio, functional training and strength zones. Female members are very welcome."
+              }
+            }
+          ]
+        }
+    </script>
+
+    <!-- Home Page Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@@type": "ListItem", "position": 1, "name": "Home", "item": "https://strengthstudio.in/" }
+          ]
+        }
+    </script>
 }
 
 <!-- Hero Section -->
@@ -116,7 +200,11 @@
             <!-- Large Feature Image -->
             <div class="col-lg-8">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 400px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g1.jpg" alt="Main Training Floor" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g1.jpg"
+                         alt="Main training floor at Strength Studio gym Belagavi with premium weight machines and free weights"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         fetchpriority="high"
+                         width="800" height="400">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 30px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h4 class="text-white fw-bold mb-2">Main Training Floor</h4>
@@ -131,7 +219,11 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 190px; cursor: pointer; border: 2px solid #3d3d3d;">
-                            <img src="~/images/Gym-Equips/g2.jpg" alt="Cardio Area" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="~/images/Gym-Equips/g2.jpg"
+                                 alt="Cardio zone with treadmills and cardio equipment at Strength Studio Belagavi gym"
+                                 style="width: 100%; height: 100%; object-fit: cover;"
+                                 loading="lazy"
+                                 width="400" height="190">
                             <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                                 <div>
                                     <h5 class="text-white fw-bold mb-1">Cardio Zone</h5>
@@ -142,7 +234,11 @@
                     </div>
                     <div class="col-12">
                         <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 190px; cursor: pointer; border: 2px solid #3d3d3d;">
-                            <img src="~/images/Gym-Equips/g3.jpg" alt="Free Weights" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="~/images/Gym-Equips/g3.jpg"
+                                 alt="Free weights area with complete dumbbell collection at Strength Studio Belagavi Karnataka"
+                                 style="width: 100%; height: 100%; object-fit: cover;"
+                                 loading="lazy"
+                                 width="400" height="190">
                             <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                                 <div>
                                     <h5 class="text-white fw-bold mb-1">Free Weights Area</h5>
@@ -159,7 +255,11 @@
         <div class="row g-4 mb-5">
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g4.jpg" alt="Training Sessions" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g4.jpg"
+                         alt="Personal and group training sessions with certified trainers at Strength Studio Belagavi"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Training Sessions</h5>
@@ -170,7 +270,11 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g5.jpg" alt="Premium Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g5.jpg"
+                         alt="Premium gym machines and fitness equipment at Strength Studio Belagavi Karnataka"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Premium Equipment</h5>
@@ -181,7 +285,11 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g6.jpg" alt="Training Area" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g6.jpg"
+                         alt="Specialized training area with dedicated workout zones at Strength Studio gym Belagavi"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Specialized Training</h5>
@@ -196,7 +304,11 @@
         <div class="row g-4 mb-5">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g7.jpg" alt="Gym Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g7.jpg"
+                         alt="Strength training power zone with barbells and plates at Strength Studio Belagavi"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="300" height="220">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h6 class="text-white fw-bold mb-1">Strength Zone</h6>
@@ -207,7 +319,11 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g8.jpg" alt="Gym Facility" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g8.jpg"
+                         alt="Functional training and dynamic workout area at Strength Studio fitness gym Belagavi"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="300" height="220">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h6 class="text-white fw-bold mb-1">Functional Area</h6>
@@ -218,7 +334,11 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g9.jpg" alt="Workout Area" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g9.jpg"
+                         alt="Multi-purpose versatile workout space at Strength Studio gym Belagavi Karnataka"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="300" height="220">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h6 class="text-white fw-bold mb-1">Multi-Purpose Zone</h6>
@@ -229,7 +349,11 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 220px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g10.jpg" alt="Training Equipment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g10.jpg"
+                         alt="Core and abdominal training equipment at Strength Studio Belagavi fitness center"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="300" height="220">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h6 class="text-white fw-bold mb-1">Core Training</h6>
@@ -244,7 +368,11 @@
         <div class="row g-4 mb-5">
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g11.jpg" alt="Gym Environment" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g11.jpg"
+                         alt="Premium motivating gym atmosphere and interior at Strength Studio Belagavi"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Premium Atmosphere</h5>
@@ -255,7 +383,11 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g12.jpg" alt="Fitness Space" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g12.jpg"
+                         alt="Complete gym setup with all fitness equipment at Strength Studio Belagavi Karnataka"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Complete Setup</h5>
@@ -266,7 +398,11 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item" style="position: relative; border-radius: 15px; overflow: hidden; height: 280px; cursor: pointer; border: 2px solid #3d3d3d;">
-                    <img src="~/images/Gym-Equips/g13.jpg" alt="Modern Gym" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="~/images/Gym-Equips/g13.jpg"
+                         alt="Modern state-of-the-art gym facility at Strength Studio Belagavi best gym in Karnataka"
+                         style="width: 100%; height: 100%; object-fit: cover;"
+                         loading="lazy"
+                         width="400" height="280">
                     <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 25px; opacity: 0; transition: opacity 0.3s ease;">
                         <div>
                             <h5 class="text-white fw-bold mb-2">Modern Facility</h5>
@@ -295,7 +431,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g5.jpg" aria-label="Strength Studio Belagavi gym equipment showcase tour video">
                             <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.40 PM.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -311,7 +447,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g8.jpg" aria-label="Women's workout and fitness training at Strength Studio gym Belagavi">
                             <source src="~/Videos/women1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -328,7 +464,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g6.jpg" aria-label="Functional training demonstration at Strength Studio Belagavi gym">
                             <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.39 PM.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -345,7 +481,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g7.jpg" aria-label="Lower body workout machine demonstration at Strength Studio Belagavi">
                             <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.37 PM2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -362,7 +498,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g4.jpg" aria-label="Expert personal training session at Strength Studio gym Belagavi Karnataka">
                             <source src="~/Videos/WhatsApp Video 2026-02-15 at 9.10.41 PM.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -378,7 +514,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="video-card">
                     <div class="video-container">
-                        <video controls preload="metadata">
+                        <video controls preload="none" poster="~/images/Gym-Equips/g1.jpg" aria-label="Strength training and bodybuilding workout at Strength Studio Belagavi">
                             <source src="~/Videos/gymVideo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -481,94 +617,85 @@
 
     /* Responsive adjustments */
     @@media (max-width: 992px) {
-        .gallery-item
+        .gallery-item {
+            height: 250px !important;
+        }
 
-    {
-        height: 250px !important;
-    }
-
-    .video-container {
-        padding-top: 75%; /* Taller aspect ratio for tablets */
-    }
-
+        .video-container {
+            padding-top: 75%; /* Taller aspect ratio for tablets */
+        }
     }
 
     @@media (max-width: 768px) {
-        .gallery-item
-
-    {
-        height: 220px !important;
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem !important;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-        .hero-buttons .btn {
-            width: 100%;
+        .gallery-item {
+            height: 220px !important;
         }
 
-    .stat-card h3 {
-        font-size: 2rem;
-    }
+        .hero-section h1 {
+            font-size: 2.5rem !important;
+        }
 
-    .feature-card {
-        padding: 30px !important;
-    }
+        .hero-buttons {
+            flex-direction: column;
+        }
 
-    .video-info {
-        padding: 15px;
-    }
+            .hero-buttons .btn {
+                width: 100%;
+            }
 
-    .video-title {
-        font-size: 1rem;
-    }
+        .stat-card h3 {
+            font-size: 2rem;
+        }
 
-    .video-description {
-        font-size: 0.85rem;
-    }
+        .feature-card {
+            padding: 30px !important;
+        }
 
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-title {
+            font-size: 1rem;
+        }
+
+        .video-description {
+            font-size: 0.85rem;
+        }
     }
 
     @@media (max-width: 576px) {
-        .gallery-item
-
-    {
-        height: 200px !important;
-    }
-
-    .hero-section h1 {
-        font-size: 2rem !important;
-    }
-
-    .display-5 {
-        font-size: 2rem !important;
-    }
-
-    .stat-card {
-        padding: 20px 10px !important;
-    }
-
-        .stat-card h3 {
-            font-size: 1.75rem;
+        .gallery-item {
+            height: 200px !important;
         }
 
-        .stat-card p {
-            font-size: 0.85rem;
+        .hero-section h1 {
+            font-size: 2rem !important;
         }
 
-    .feature-icon {
-        width: 60px !important;
-        height: 60px !important;
-    }
-
-        .feature-icon i {
-            font-size: 1.5rem !important;
+        .display-5 {
+            font-size: 2rem !important;
         }
 
+        .stat-card {
+            padding: 20px 10px !important;
+        }
+
+            .stat-card h3 {
+                font-size: 1.75rem;
+            }
+
+            .stat-card p {
+                font-size: 0.85rem;
+            }
+
+        .feature-icon {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+            .feature-icon i {
+                font-size: 1.5rem !important;
+            }
     }
 </style>

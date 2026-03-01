@@ -1,5 +1,109 @@
 ﻿@{
-    ViewData["Title"] = "Services";
+    ViewData["Title"] = "Gym Services in Belagavi | Strength Training, Cardio & Personal Training";
+    ViewData["MetaDescription"] = "Explore gym services at Strength Studio Belagavi — personal training, strength training, cardio, HIIT, functional training & nutrition counseling. Certified trainers. Call +91 7090029156.";
+    ViewData["MetaKeywords"] = "gym services Belagavi, personal training Belagavi, strength training Belgaum, cardio gym Belagavi, HIIT training Belagavi, functional training Belagavi, nutrition counseling gym Belagavi, weight training gym Belgaum, fitness programs Belagavi, personal trainer near me Belagavi";
+    ViewData["CanonicalUrl"] = "https://strengthstudio.in/Services";
+    ViewData["OgTitle"] = "Gym Services in Belagavi | Strength Studio";
+    ViewData["OgDescription"] = "Personal training, strength & cardio programs at Strength Studio Belagavi. Expert certified trainers. Book your session today — Call +91 7090029156.";
+    ViewData["OgImage"] = "https://strengthstudio.in/images/Gym-Equips/g4.jpg";
+    ViewData["OgImageAlt"] = "Personal training session at Strength Studio gym Belagavi";
+}
+
+@section Head {
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@@type": "ListItem", "position": 1, "name": "Home", "item": "https://strengthstudio.in/" },
+            { "@@type": "ListItem", "position": 2, "name": "Services", "item": "https://strengthstudio.in/Services" }
+          ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "ItemList",
+          "name": "Gym Services at Strength Studio Belagavi",
+          "description": "Comprehensive fitness services offered at Strength Studio gym in Belagavi, Karnataka",
+          "url": "https://strengthstudio.in/Services",
+          "itemListElement": [
+            {
+              "@@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@@type": "Service",
+                "name": "Personal Training",
+                "description": "One-on-one sessions with certified personal trainers in Belagavi tailored to your specific goals and fitness level.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" },
+                "offers": {
+                  "@@type": "Offer",
+                  "price": "6000",
+                  "priceCurrency": "INR",
+                  "description": "26 sessions"
+                }
+              }
+            },
+            {
+              "@@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@@type": "Service",
+                "name": "Strength Training",
+                "description": "Build muscle and increase strength with comprehensive weight training programs at Strength Studio Belagavi.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" }
+              }
+            },
+            {
+              "@@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@@type": "Service",
+                "name": "Cardio Training",
+                "description": "Improve cardiovascular health with modern cardio equipment including treadmills, ellipticals, stationary bikes and rowing machines.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" }
+              }
+            },
+            {
+              "@@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@@type": "Service",
+                "name": "Nutrition Counseling",
+                "description": "Free nutrition consultation included in membership. Meal planning, dietary assessments and supplement advice.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" }
+              }
+            },
+            {
+              "@@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@@type": "Service",
+                "name": "HIIT Training",
+                "description": "High-Intensity Interval Training for maximum calorie burn and fat loss at Strength Studio Belagavi.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" }
+              }
+            },
+            {
+              "@@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@@type": "Service",
+                "name": "Functional Training",
+                "description": "Movement-based exercises including core strengthening, balance training, flexibility and injury prevention.",
+                "provider": { "@@id": "https://strengthstudio.in/#gym" },
+                "areaServed": { "@@type": "City", "name": "Belagavi" }
+              }
+            }
+          ]
+        }
+    </script>
 }
 
 <!-- Page Header -->
@@ -314,7 +418,7 @@
                 <div class="position-relative">
                     <div class="placeholder-image-large" style="background: linear-gradient(145deg, #2d2d2d, #1a1a1a); border: 2px solid #3d3d3d; position: relative; overflow: hidden; border-radius: 15px;">
                         <!-- Replace with actual gym image -->
-                        <img src="/images/gym-training.jpg" alt="Training Session" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+                        <img src="/images/gym-training.jpg" alt="Personal training session at Strength Studio gym Belagavi" style="width: 100%; height: 100%; object-fit: cover; display: none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
                         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 400px;">
                             <i class="fas fa-trophy fa-5x text-warning mb-3"></i>
                             <p class="text-white-50 mt-3">Excellence in Fitness</p>
